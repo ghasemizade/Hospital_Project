@@ -38,21 +38,20 @@
 .nav-bar ul li {
     text-decoration: none;
     list-style: none;
-    padding-left: 15px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 20px;
-    position: relative;
-    color: #eee;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ddd;
     margin-right: 2rem;
     cursor: pointer;
+    transition: .15;
+}
+
+.nav-bar ul li:hover {
+    color: #fff;
 }
 
 
 .logo {
-    position: relative;
-    float: right;
     width: 110px;
     margin-left: 120px;
     margin-top: 10px;
