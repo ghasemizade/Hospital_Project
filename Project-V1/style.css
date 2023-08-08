@@ -1,16 +1,31 @@
-*{
+* {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    background: linear-gradient(RGBA(13, 70, 83, 0.78) ,RGBA(13, 70, 83, 0.78)) ,url("img/bg-banner.jpg");
+
+.container {
+    background: linear-gradient(RGBA(13, 70, 83, 0.78), RGBA(13, 70, 83, 0.78)), url("img/bg-banner.jpg");
     width: 100%;
-    height: 435px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
+
 /* nav-bar */
-.nav-bar ul li{
+.nav-bar {
+    position: fixed;
+    top: 0;
+    background: RGBA(13, 70, 83, 0.78);
+    width: 100%;
+    height: 60px;
+}
+
+.nav-bar ul li {
     display: inline-block;
     text-decoration: none;
     padding-left: 15px;
@@ -21,35 +36,35 @@
     position: relative;
     left: 130px;
 }
-.nav-bar{
-    position: fixed;
-    background: RGBA(13, 70, 83, 0.78);
-    width: 100%;
-    height: 60px;
-}
-.logo{
+
+
+.logo {
     position: relative;
     float: right;
     width: 110px;
     margin-left: 120px;
     margin-top: 10px;
 }
+
 /* header */
-.header{
+.header {
     text-align: center;
-    padding-top: 150px;
+    margin-top: 20rem;
 }
-.header h1{
+
+.header h1 {
     font-size: 35px;
     color: white;
     padding: 15px 0 15px 0;
 }
-.header p{
+
+.header p {
     font-size: 15px;
     color: white;
     padding: 0 0 20px 0;
 }
-.header a{
+
+.header a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -58,40 +73,48 @@
     /* margin-top: 60px; */
     background-color: rgba(33, 139, 163, 0.78);
 }
-.header a:hover{
+
+.header a:hover {
     opacity: .8;
 }
-.MyContainer{
+
+.MyContainer {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(3, 200px);
 }
-.item{
+
+.item {
     position: relative;
     left: 150px;
     top: 170px;
     padding: 5px 10px 10px 10px;
     font-size: 20px;
 }
-.item img{
+
+.item img {
     padding-bottom: 20px;
 
 }
-.item p{
+
+.item p {
     color: #999999;
     font-size: 13px;
     font-weight: 600;
     line-height: 20px;
 }
-.item h4{
+
+.item h4 {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 20px;
 }
-.item3 h4{
+
+.item3 h4 {
     font-size: 15px;
 }
-hr{
+
+hr {
     height: 5px;
     width: 60px;
     background: #ffb737;
@@ -99,6 +122,3 @@ hr{
     border: 0;
     margin: 5px 0 20px 0;
 }
-
-
-
